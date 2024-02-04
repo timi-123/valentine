@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffc0cb; /* Pink background */
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; /* Prevent horizontal scroll */
+    position: relative; /* Needed for rotating messages */
+    background-image: url('hearts-background.jpg'); /* Update with your image file */
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 192, 203, 0.8); /* Solid pink with some transparency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #e44d26;
+}
+
+p {
+    color: #fff; /* White color for text */
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button.yes {
+    background-color: #4caf50; /* Green */
+    color: #fff;
+    font-size: 32px; /* Set the desired constant size */
+}
+
+button.no {
+    background-color: #e44d26; /* Red */
+    color: #fff;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* Rotating messages */
+.message-container {
